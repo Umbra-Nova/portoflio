@@ -1,0 +1,41 @@
+{
+  "name": "portoflio",
+  "version": "1.0.0",
+  "description": "This repository displays my skills through various educational exercises and projects",
+  "main": "index.js",
+  "scripts": {
+    "lint": "run-s lint:source lint:style",
+    "lint:fix": "run-s lint:source:fix lint:style:fix",
+    "lint:source": "eslint -f pretty --max-warnings=0 .",
+    "lint:source:fix": "eslint -f pretty --max-warnings=0 --fix .",
+    "lint:style": "prettier --check .",
+    "lint:style:fix": "prettier --write .",
+    "pretest": "npm run lint:source",
+    "test": "playwright test",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Umbra-Nova/portoflio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Umbra-Nova/portoflio/issues"
+  },
+  "homepage": "https://github.com/Umbra-Nova/portoflio#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.3",
+    "@typescript-eslint/eslint-plugin": "^8.51.0",
+    "@typescript-eslint/parser": "^8.51.0",
+    "eslint": "^9.39.2",
+    "eslint-plugin-playwright": "^2.4.0",
+    "husky": "^8.0.0"
+  },
+  "dependencies": {
+    "typescript": "^5.9.3"
+  }
+}

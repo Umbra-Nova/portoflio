@@ -3,5 +3,9 @@ test-results/
 playwright-report/
 playwright/.cache/
 playwright/.auth/
+.husky/
 .env
 .vscode
+package-lock.json
+.prettierignore
+**/*.png

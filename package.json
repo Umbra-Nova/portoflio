@@ -1,0 +1,26 @@
+{
+  "name": "jessica-qa-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Umbra-Nova/jessica-qa-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Umbra-Nova/jessica-qa-portfolio/issues"
+  },
+  "homepage": "https://github.com/Umbra-Nova/jessica-qa-portfolio#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.8.0"
+  },
+  "dependencies": {
+    "playwright": "^1.60.0"
+  }
+}

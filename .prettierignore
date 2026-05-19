@@ -1,0 +1,16 @@
+# Package managers and locks
+node_modules/
+package-lock.json
+
+# Build outputs
+dist/
+build/
+
+# Playwright test artifacts
+playwright-report/
+test-results/
+test-snapshots/
+
+# Local environment files
+.env
+.env.*

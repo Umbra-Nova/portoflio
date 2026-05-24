@@ -4,7 +4,7 @@
   "description": "A portfolio playground showcasing advanced test automation and features of Playwright, including API testing, visual regression testing, and performance testing.",
   "main": "index.js",
   "scripts": {
-    "test": " npx playwright test",
+    "test": "npx playwright test",
     "lint": "npx eslint .",
     "lint:fix": "npx eslint . --fix",
     "format": "npx prettier --write .",
@@ -28,11 +28,12 @@
     "@playwright/test": "^1.60.0",
     "@types/node": "^25.8.0",
     "eslint": "^9.39.4",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-playwright": "^2.10.3",
+    "eslint-plugin-prettier": "^5.2.1",
     "husky": "^8.0.3",
+    "prettier": "^3.3.3",
+    "typescript": "^6.0.3",
     "typescript-eslint": "^8.59.4"
-  },
-  "dependencies": {
-    "playwright": "^1.60.0"
   }
 }

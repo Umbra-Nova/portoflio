@@ -14,3 +14,7 @@ test-snapshots/
 # Local environment files
 .env
 .env.*
+
+# Configuration files (if you want to ignore them)
+*.config.js
+*.config.ts

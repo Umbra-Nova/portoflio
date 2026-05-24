@@ -23,8 +23,14 @@ I will be using an e-commerce site to create a simple test suite. The goal here 
 
 ## Lessons Learned
 
-**Problem 1:** The Healer couldn't create files for some reasons so I tried to changed its configurations thinking it would apply to all of the agents. I was deeply mistaken and acknowledged there are specific reasons why each agent has their permissions.
+### Lesson 1
 
-**Resolution:** Had it do a fix diagnostic on itself. With the ability to create and edit files it was able to edit itself back to normal.
+The Planner couldn't create files for some reasons so I tried to changed its configurations thinking it would apply to all of the agents. I was deeply mistaken and acknowledged there are specific reasons why each agent has their permissions.
+
+**Resolution:** Had it do a fix diagnostic on itself. With the ability to create and edit files it was able to edit itself back to normal. For safety though I deleted the agent files and re-ran the init command.
 
 **Thoughts:** I probably should have used the Healer.
+
+**Conclusion:** I thought I had to fix the file because the file says there are 9+ errors, however it pushed just fine. After some further research, come to find out, it was VSCode's evaluation setting. So I turned it off the evaluation setting. Here I learned more understanding of the config settings of the agents as well as a setting in VSCode.
+
+### Lesson 2

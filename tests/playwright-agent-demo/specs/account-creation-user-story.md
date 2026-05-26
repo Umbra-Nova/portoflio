@@ -2,9 +2,7 @@
 
 ## Story
 
-As a new customer,
-I want to create an account on the PrestaShop store,
-So that I can browse products, make purchases, and access my order history.
+As a new customer, I want to create an account on the PrestaShop store, So that I can browse products, make purchases, and access my order history.
 
 ## Acceptance Criteria
 

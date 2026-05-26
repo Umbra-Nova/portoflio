@@ -2,9 +2,7 @@
 
 ## Story
 
-As a customer,
-I want to browse products, add items to my cart, and complete a purchase,
-So that I can receive the products I've selected and paid for.
+As a customer, I want to browse products, add items to my cart, and complete a purchase, So that I can receive the products I've selected and paid for.
 
 ## Acceptance Criteria
 

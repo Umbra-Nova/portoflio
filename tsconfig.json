@@ -13,20 +13,23 @@
       "@testdata/*": ["./src/test-data/*"]
     },
 
-    // Modules
-    "module": "CommonJS",
-    // Explicit moduleResolution keeps behaviour stable across TS versions
+    // Modules — ESNext matches package.json's "type": "module"; bundler
+    // resolution requires an ESNext/Node16+ module setting, not CommonJS.
+    "module": "ESNext",
     "moduleResolution": "bundler",
     "esModuleInterop": true,
     "resolveJsonModule": true,
+    // Required for esbuild-based transpilers (Playwright's test runner uses
+    // esbuild) since each file must be compilable in isolation.
+    "isolatedModules": true,
 
-    // Type Checking
+    // Type Checking — "strict" already implies noImplicitAny,
+    // strictNullChecks and strictFunctionTypes; only list flags outside
+    // that umbrella here.
     "strict": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "strictFunctionTypes": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
 
     // File Management
     "skipLibCheck": true,
@@ -37,5 +40,5 @@
     "rootDir": "./"
   },
   "include": ["**/*.ts"],
-  "exclude": ["node_modules", "playwright-report", "test-results"]
+  "exclude": ["node_modules", "dist", "playwright-report", "test-results"]
 }
